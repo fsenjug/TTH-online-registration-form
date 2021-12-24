@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Merriweather";
+}
+
+h1 {
+  background-color: #333638;
+  color: #cecece;
+  text-transform: uppercase;
+  padding: 1.3em;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+header h2 {
+  text-align: center;
+  font-size: 1.1em;
+  padding: 1em;
+}
+
+header p {
+  padding-bottom: 1.5em;
+  text-align: center;
+  color: #b4b3b3;
+}
+form {
+  border-top: 2px solid #333638;
+}
+legend {
+  padding: 1.3em;
+}
+fieldset {
+  border: none;
+}
+legend {
+  padding: 1.1em 0;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.contact-information {
+  border-bottom: 2px solid #333638;
+}
+.contact-information input,
+.contact-information select {
+  width: 100%;
+  height: 4em;
+  border: none;
+  background-color: #e7e6e4;
+  border-radius: 8px;
+  margin-bottom: 1.2em;
+  margin-top: 0.7em;
+}
+.newsletter input {
+  margin-bottom: 1.5em;
+}
+
+textarea,
+button {
+  display: block;
+  width: 100%;
+}
+
+textarea {
+  height: 8em;
+  border: none;
+  background-color: #e7e6e4;
+  border-radius: 8px;
+}
+button {
+  height: 4em;
+  border: none;
+  border-radius: 8px;
+  background-color: #57a591;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+footer p {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 3em;
+  color: #cecece;
+}
+@media screen and (min-width: 768px) {
+  main {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  header p {
+    border-bottom: none;
+  }
+  input[id="zip"] {
+    width: 30%;
+  }
+  .contact-information label {
+    width: 30%;
+    float: left;
+    padding-top: 1.5em;
+  }
+
+  .contact-information input,
+  .contact-information select {
+    width: 70%;
+  }
+}
