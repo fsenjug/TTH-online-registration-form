@@ -25,7 +25,7 @@ header p {
   color: #b4b3b3;
 }
 form {
-  border-top: 2px solid #333638;
+  border-top: 5px double #333638;
 }
 legend {
   padding: 1.3em;
