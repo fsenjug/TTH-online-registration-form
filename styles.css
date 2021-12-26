@@ -83,6 +83,17 @@ footer p {
   padding-bottom: 3em;
   color: #cecece;
 }
+input[id="zip"],
+label[for="zip"] {
+  display: block;
+}
+input[id="zip"] {
+  width: 50%;
+}
+:focus:focus {
+  outline: 2px solid #57a591;
+}
+
 @media screen and (min-width: 768px) {
   main {
     width: 60%;
@@ -92,17 +103,21 @@ footer p {
   header p {
     border-bottom: none;
   }
-  input[id="zip"] {
-    width: 30%;
-  }
-  .contact-information label {
-    width: 30%;
-    float: left;
-    padding-top: 1.5em;
+
+  .contact-information {
+    display: inline-flex;
+    flex-wrap: wrap;
   }
 
   .contact-information input,
   .contact-information select {
-    width: 70%;
+    flex-basis: 70%;
+  }
+  .contact-information label {
+    flex-basis: 30%;
+    padding-top: 1.3em;
+  }
+  input[id="zip"] {
+    max-width: 25%;
   }
 }
